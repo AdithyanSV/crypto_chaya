@@ -17,15 +17,16 @@ const web3Modal = new Web3Modal({
 });
 
 interface ItemType {
-    id: number;
+    id: string;
     image: string;
     price: number;
 }
 
 const items: ItemType[] = [
-    { id: 1, image: '/path/to/image1.png', price: 0.1 }, // Replace with actual image paths
-    { id: 2, image: '/path/to/image2.png', price: 0.2 },
-    // Add more items with their images and prices
+  { id: 'chaya', image: 'https://png.pngtree.com/png-clipart/20221109/ourmid/pngtree-fresh-milk-tea-or-indian-kadak-chai-png-image_6432496.png', price: 0.01 },
+  { id: 'mutta puffs', image: 'https://png.pngtree.com/png-clipart/20231112/original/pngtree-puff-pastry-puff-pastry-picture-image_13256611.png', price: 0.02 },
+  { id: 'vada', image: 'https://png.pngtree.com/png-vector/20231124/ourmid/pngtree-vadai-starter-lentil-lanka-png-image_10707772.png', price: 0.02 },
+  { id: 'samosa', image: 'https://png.pngtree.com/png-vector/20240820/ourmid/pngtree-a-crispy-flaky-snack-filled-with-flavor-samosas-png-image_13554874.png', price: 0.02 }
 ];
 
 const Home: React.FC = () => {
@@ -102,10 +103,10 @@ const Home: React.FC = () => {
                             height: '50px',
                             padding: '10px 20px',
                             fontSize: '16px',
+                            textAlign: 'center',
                             backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                            backgroundImage: 'url("wall-n.png")',
                             border: 'none',
-                            borderRadius: '5px'}}>Buy Items with Cryptocurrency</h1>
+                            borderRadius: '5px'}}>Crypto Chayakkada</h1>
               <div
                 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '410px'}}>
 
@@ -143,7 +144,6 @@ const Home: React.FC = () => {
                                 padding: '10px 20px',
                                 fontSize: '16px',
                                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                                backgroundImage: 'url("wall-n.png")',
                                 border: 'none',
                                 borderRadius: '5px',
                                 color: '#00ff00'
@@ -157,7 +157,7 @@ const Home: React.FC = () => {
           <div
                 style={{
                     position: 'absolute',
-                    top: '45%',
+                    top: '55%',
                     left: '54.55%',
                     transform: 'translateX(-50%)', // Center horizontally
                     backgroundImage: 'url("https://png.pngtree.com/png-clipart/20230927/original/pngtree-old-radio-for-decorative-png-image_13159650.png")',

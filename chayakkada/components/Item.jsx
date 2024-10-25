@@ -9,11 +9,11 @@ const Item = ({ id, image, price, onBuy }) => {
     return (
         <motion.div
             onClick={handleClick}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.8 }}
             whileTap={{ scale: 0.9 }}
         >
             <img src={image} alt={`Item ${id}`} style={{ width: '200px', height: 'auto' }} />
-            <p>Price: {price} ETH</p>
+            <p align="center">{price} ETH</p>
         </motion.div>
     );
 };
