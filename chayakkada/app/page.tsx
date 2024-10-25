@@ -80,38 +80,117 @@ const Home: React.FC = () => {
     };
 
     return (
-        <div style={{ padding: '20px' }}>
-            <h1 style={{ textAlign: 'center' }}>Buy Items with Cryptocurrency</h1>
-            <h2 style={{ textAlign: 'center' }}>Balance: {balance.toFixed(2)} ETH</h2>
-
-            {/* Connect Wallet Button */}
-            <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-                {!walletConnected ? (
-                    <button 
-                        onClick={connectWallet} 
-                        style={{
+      <div>
+        <div 
+            style={{ 
+              padding: '50px',
+              backgroundImage: 'url("/bleh.png"), url("/newspaper.png")', 
+              backgroundColor: '#000000',
+              backgroundSize: '75%, 120%',           
+              backgroundRepeat: 'no-repeat',      
+              backgroundPosition: 'center',       
+              minHeight: '100vh',
+              color: '#c8a033',
+              position: 'relative', // Set position relative to contain absolute elements
+          }}>
+          
+          <div
+            style={{ display: 'flex',  justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px'}}>
+              <div style={{ width: '410px'}}></div>
+              <h1 style={{ 
+                            width: '300px',
+                            height: '50px',
                             padding: '10px 20px',
                             fontSize: '16px',
-                            cursor: 'pointer',
-                            backgroundColor: '#f8b400',
+                            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                            backgroundImage: 'url("wall-n.png")',
                             border: 'none',
-                            borderRadius: '5px',
-                            color: '#fff'
-                        }}
-                    >
-                        Connect Wallet
-                    </button>
-                ) : (
-                    <p style={{ fontSize: '18px', color: 'green' }}>Wallet Connected: {account}</p>
-                )}
-            </div>
+                            borderRadius: '5px'}}>Buy Items with Cryptocurrency</h1>
+              <div
+                style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '410px'}}>
+
+                  <h2 style={{
+                                width: '200px',
+                                height: '50px',
+                                padding: '10px 20px',
+                                fontSize: '16px',
+                                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                                backgroundImage: 'url("wall-n.png")',
+                                border: 'none',
+                                borderRadius: '5px',
+                                color: '#00ff00'}}>Balance: {balance.toFixed(2)} ETH</h2>
+                {/* Connect Wallet Button */}
+                <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center'}}>
+                    {!walletConnected ? (
+                      <button 
+                      onClick={connectWallet} 
+                            style={{
+                                padding: '10px 20px',
+                                fontSize: '16px',
+                                cursor: 'pointer',
+                                backgroundColor: '#080808',
+                                border: 'none',
+                                borderRadius: '5px',
+                                color: '#fff'
+                              }}
+                              >
+                            Connect Wallet
+                        </button>
+                    ) : (<div 
+                            style={{
+                                width: '200px',
+                                height: '50px',
+                                padding: '10px 20px',
+                                fontSize: '16px',
+                                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                                backgroundImage: 'url("wall-n.png")',
+                                border: 'none',
+                                borderRadius: '5px',
+                                color: '#00ff00'
+                              }}
+                              >Wallet Connected
+                        </div>
+                    )}
+                </div>
+              </div>
+          </div>
+          <div
+                style={{
+                    position: 'absolute',
+                    top: '45%',
+                    left: '54.55%',
+                    transform: 'translateX(-50%)', // Center horizontally
+                    backgroundImage: 'url("https://png.pngtree.com/png-clipart/20230927/original/pngtree-old-radio-for-decorative-png-image_13159650.png")',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat',
+                    width: '100px', // Set desired size
+                    height: '100px', // Set desired size
+                    zIndex: 10, // Ensure it appears on top
+                }}
+            ></div>
+
+            <iframe
+                src="https://open.spotify.com/embed/playlist/6Aewe09tLchUm8U520m3Em?autoplay=true"
+                width="300"
+                height="80"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                style={{
+                    position: 'absolute',
+                    top:'550px',
+                    left: '37.5%',
+                    zIndex: 10,
+                    opacity: 0,
+                }}
+            ></iframe>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                 {items.map(item => (
-                    <Item key={item.id} {...item} onBuy={handleBuy} />
+                  <Item key={item.id} {...item} onBuy={handleBuy} />
                 ))}
             </div>
         </div>
+      </div>
     );
 };
 
