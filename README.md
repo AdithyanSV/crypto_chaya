@@ -24,7 +24,7 @@ Introducing the Ultimate Chayakkada Simulator: an online 80’s Kerala tea stall
 For Software:
 - HTML,CSS,Javascript
 - Next.js(framework)
-- VS Code,Brower Dev Tools,git,ChatGPT
+- VS Code,Broswer Dev Tools,git,ChatGPT
 
 ### Implementation
 For Software:
