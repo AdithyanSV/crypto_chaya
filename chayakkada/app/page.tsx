@@ -83,40 +83,42 @@ const Home: React.FC = () => {
     <div>
       <div 
         style={{ 
-          padding: '50px',
+          width: '100svw',
+          height: '100svh',
+          padding: '20px 50px',
           backgroundImage: 'url("/bleh.png"), url("/newspaper.png")', 
           backgroundColor: '#000000',
           backgroundSize: '75%, 120%',           
           backgroundRepeat: 'no-repeat',      
           backgroundPosition: 'center',       
-          minHeight: '100vh',
+          minHeight: '100svh',
           color: '#c8a033',
           position: 'relative', // Set position relative to contain absolute elements
         }}>
-        <audio
-          src="/sound.mp3" // Replace with your audio file path
-          autoPlay
-          loop
-          style={{ display: 'none' }} // Hide audio player if you don't want it visible
-        />
+          <audio
+              src='/sound.mp3'// Replace with your audio file path
+              autoPlay
+              loop
+              style={{ display: 'none' }} // Hide audio player if you don't want it visible
+          />
           
         <div
           style={{ display: 'flex',  justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px'}}>
             <div style={{ width: '410px'}}></div>
             <img src="/Board.png" alt="x" width={"500px"} height={"250px"} padding-top={"0"} margin-top={"0"}/>
             <div
-              style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '410px'}}>
+              style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', width: '410px'}}>
 
               <h2 style={{
-                width: '200px',
                 height: '50px',
                 padding: '10px 20px',
+                marginRight: '10px',
                 fontSize: '16px',
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
                 backgroundImage: 'url("wall-n.png")',
                 border: 'none',
                 borderRadius: '5px',
-                color: '#00ff00'}}>Balance: {balance.toFixed(2)} ETH</h2>
+                color: '#a4ffb4'}}>Balance: {balance.toFixed(2)} ETH</h2>
               {/* Connect Wallet Button */}
               <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center'}}>
                 {!walletConnected ? (
@@ -126,23 +128,53 @@ const Home: React.FC = () => {
                       padding: '10px 20px',
                       fontSize: '16px',
                       cursor: 'pointer',
-                      backgroundColor: '#080808',
+                      backgroundColor: 'rgba(0, 0, 0, 0.5)',
                       border: 'none',
                       borderRadius: '5px',
-                      color: '#fff'
+                      color: '#a4ffb4'
                     }}>Connect Wallet
                   </button>
                 ) : (<div 
                   style={{
-                    width: '200px',
+                    width: '50px',
                     height: '50px',
-                    padding: '10px 20px',
+                    padding: '0px',
                     fontSize: '16px',
                     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    backgroundImage: 'url("wall-y.png")',
+                    backgroundSize: '75%',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
                     border: 'none',
-                    borderRadius: '5px',
-                    color: '#00ff00'
-                  }}>Wallet Connected
+                    borderRadius: '20px',
+                    color: '#00ff00',
+                    position: 'relative' // Add position relative for absolute positioning of tooltip
+                  }}
+                >
+                  <style jsx>{`
+                    div::after {
+                      content: "Wallet Connected"; /* Replace this with your text */
+                      position: absolute;
+                      top: -35px; /* Adjust the position above the element */
+                      left: 50%;
+                      transform: translateX(-50%);
+                      background-color: rgba(0, 0, 0, 0.7);
+                      color: #a4ffb4;
+                      padding: 5px;
+                      border-radius: 5px;
+                      white-space: nowrap;
+                      font-size: 12px;
+                      z-index: 1;
+                      opacity: 0; /* Initially hidden */
+                      transition: opacity 0.1s ease-in-out, transform 0.2s ease-in-out;
+                      transition-delay: 0.1s; /* Delay for the tooltip to appear */
+                    }
+                    div:hover::after {
+                      opacity: 1; /* Show the tooltip on hover */
+                      transform: translate(-50%, 5px); /* Move it slightly upwards */
+                      transition-delay: 0s; /* Remove delay on hover out */
+                    }
+                  `}</style>
                 </div>)}
               </div>
             </div>
