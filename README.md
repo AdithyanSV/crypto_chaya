@@ -86,8 +86,8 @@ Styling: Custom CSS for the retro theme, ensuring that all visual elements align
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-Explain what the video demonstrates
+https://drive.google.com/file/d/1eF9LsMet-ULcD-iY3Zz__ZsiaxKCIamk/view?usp=sharing
+In the video, the user can be seen exploring the chayakkada while the tea brewing and pouring sounds are heard. When the user clicks on the radio, old 80's malayalam songs start playing. The user can also select which kadi(snack) to choose, and after choosing it, they can buy it using their crypto wallet, which in this case is metamask.
 
 
 ## Team Contributions
