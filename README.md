@@ -53,8 +53,36 @@ This shows the radio placement and how the spotiy playlist is embedded into the 
 
 
 ###Build Photos
-duct here)
-Explain the final build
+![image](https://github.com/user-attachments/assets/7a025da5-bfa2-4b81-a6cb-bc98b3492fae)
+Project Overview: The final build of the 80's themed Kerala chayakkada web app is a nostalgic experience that transports users to a charming tea shop environment reminiscent of the vibrant culture of Kerala in the 1980s. The app allows users to purchase traditional items like tea, egg puffs, samosas, and vadas using cryptocurrency, while immersing themselves in a delightful auditory landscape.
+
+Key Features:
+User-Friendly Interface:
+
+The app boasts a retro-themed UI with vibrant colors and nostalgic design elements, creating an inviting atmosphere that resonates with the 80's aesthetic.
+Product Offerings:
+
+Users can browse and purchase a variety of items:
+Tea: The central offering, available in various styles.
+Snacks: Egg puffs, samosas, and vadas to complement the tea experience.
+Each item displays its price in cryptocurrency, adding a modern twist to a traditional concept.
+Cryptocurrency Integration:
+
+The app allows users to buy items using crypto, providing a seamless payment experience. It connects with wallets via Web3, enabling real-time transaction processing.
+Background Sounds:
+
+Subtle tea-making sounds enhance the immersive experience, creating an auditory backdrop that feels authentic to a real chayakkada.
+Users can play a radio feature to listen to a curated playlist of old songs, adding to the nostalgic ambiance.
+Dynamic Audio Management:
+
+The audio features are designed to loop seamlessly, with a smooth transition between the background sounds and music from the radio.
+Responsive Design:
+
+The app is built to be responsive, ensuring a consistent experience across different devices and screen sizes. The layout and audio elements are fixed to maintain their positions, enhancing usability.
+Technical Aspects:
+Framework: Built using Next.js with TypeScript, leveraging its features for a robust and scalable application.
+State Management: Utilizes React hooks for managing the state of items, user balance, and wallet connection.
+Styling: Custom CSS for the retro theme, ensuring that all visual elements align with the 80's aesthetic.
 
 ### Project Demo
 # Video
@@ -64,7 +92,7 @@ Explain what the video demonstrates
 
 ## Team Contributions
 - Ashwin: Webpage creation,Crypto integration, playlist and audio integration for radio.
-- Adithyan: Image editing, asset making, webpage editing and addition of navigation buttons.
+- Adithyan: Image editing, asset making, heading texts, webpage editing and addition of navigation buttons.
 
 ---
 Made with ❤ at TinkerHub Useless Projects 
