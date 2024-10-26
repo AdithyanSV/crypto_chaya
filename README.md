@@ -29,8 +29,8 @@ For Software:
 ### Implementation
 For Software:
 # Installation
-git clone https://github.com/AdithyanSV/crypto_chaya.git
-cd chayakkada
+git clone https://github.com/AdithyanSV/crypto_chaya.git<br /> 
+cd chayakkada<br /> 
 npm install
 
 # Run 
@@ -63,9 +63,8 @@ Explain what the video demonstrates
 
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Ashwin: Webpage creation,Crypto integration, playlist and audio integration for radio.
+- Adithyan: Image editing, asset making, webpage editing and addition of navigation buttons.
 
 ---
 Made with ❤ at TinkerHub Useless Projects 
