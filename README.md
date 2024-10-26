@@ -52,7 +52,7 @@ This shows how the placement of the chayakkada poster and the backgroound image 
 This shows the radio placement and how the spotiy playlist is embedded into the radio which starts playing song once the radio is clicked upon.
 
 
-###Build Photos
+### Build Photos
 ![image](https://github.com/user-attachments/assets/7a025da5-bfa2-4b81-a6cb-bc98b3492fae)
 Project Overview: The final build of the 80's themed Kerala chayakkada web app is a nostalgic experience that transports users to a charming tea shop environment reminiscent of the vibrant culture of Kerala in the 1980s. The app allows users to purchase traditional items like tea, egg puffs, samosas, and vadas using cryptocurrency, while immersing themselves in a delightful auditory landscape.
 
